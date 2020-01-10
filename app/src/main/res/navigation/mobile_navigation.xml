@@ -8,30 +8,29 @@
     <fragment
         android:id="@+id/navigation_table"
         android:name="com.tetfudev.sports268.ui.premierleague.table.TableFragment"
-        android:label="Table"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_table" />
 
     <fragment
         android:id="@+id/navigation_fixture"
         android:name="com.tetfudev.sports268.ui.premierleague.fixture.FixtureFragment"
         android:label="Fixture"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_fixture" />
 
     <fragment
         android:id="@+id/navigation_stats"
         android:name="com.tetfudev.sports268.ui.premierleague.stats.StatsFragment"
         android:label="Stats"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_stats" />
 
     <fragment
         android:id="@+id/navigation_teams"
         android:name="com.tetfudev.sports268.ui.premierleague.teams.TeamsFragment"
         android:label="Stats"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_stats" />
 
     <fragment
         android:id="@+id/navigation_players"
         android:name="com.tetfudev.sports268.ui.premierleague.players.PlayersFragment"
         android:label="Stats"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_stats" />
 </navigation>

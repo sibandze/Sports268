@@ -22,8 +22,8 @@ public class FixtureFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         fixtureViewModel =
                 ViewModelProviders.of(this).get(FixtureViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
+        View root = inflater.inflate(R.layout.fragment_fixture, container, false);
+        final TextView textView = root.findViewById(R.id.text_fixture);
         fixtureViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
