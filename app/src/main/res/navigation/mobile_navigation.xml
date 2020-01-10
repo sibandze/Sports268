@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_table">
+
+    <fragment
+        android:id="@+id/navigation_table"
+        android:name="com.tetfudev.sports268.ui.premierleague.table.TableFragment"
+        android:label="Table"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_fixture"
+        android:name="com.tetfudev.sports268.ui.premierleague.fixture.FixtureFragment"
+        android:label="Fixture"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_stats"
+        android:name="com.tetfudev.sports268.ui.premierleague.stats.StatsFragment"
+        android:label="Stats"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_teams"
+        android:name="com.tetfudev.sports268.ui.premierleague.teams.TeamsFragment"
+        android:label="Stats"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_players"
+        android:name="com.tetfudev.sports268.ui.premierleague.players.PlayersFragment"
+        android:label="Stats"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>

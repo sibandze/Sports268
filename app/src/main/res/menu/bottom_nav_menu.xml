@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_table"
+        android:icon="@drawable/ic_trophy"
+        android:title="Table" />
+
+    <item
+        android:id="@+id/navigation_fixture"
+        android:icon="@drawable/ic_calendar"
+        android:title="Fixture" />
+
+    <item
+        android:id="@+id/navigation_stats"
+        android:icon="@drawable/ic_soccer_ball"
+        android:title="Stats" />
+    <item
+        android:id="@+id/navigation_teams"
+        android:icon="@drawable/ic_team"
+        android:title="Clubs" />
+    <item
+        android:id="@+id/navigation_players"
+        android:icon="@drawable/ic_player"
+        android:title="Players" />
+
+</menu>
