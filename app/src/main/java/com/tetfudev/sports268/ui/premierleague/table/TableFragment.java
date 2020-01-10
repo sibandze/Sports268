@@ -23,7 +23,7 @@ public class TableFragment extends Fragment {
         tableViewModel =
                 ViewModelProviders.of(this).get(TableViewModel.class);
         View root = inflater.inflate(R.layout.fragment_table, container, false);
-        final TextView textView = root.findViewById(R.id.text_table);
+        final TextView textView = root.findViewById(R.id.league_team_name);
         tableViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

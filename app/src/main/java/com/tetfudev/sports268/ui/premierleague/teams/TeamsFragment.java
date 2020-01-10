@@ -22,8 +22,8 @@ public class TeamsFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         teamsViewModel =
                 ViewModelProviders.of(this).get(TeamsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_table, container, false);
-        final TextView textView = root.findViewById(R.id.text_table);
+        View root = inflater.inflate(R.layout.fragment_players, container, false);
+        final TextView textView = root.findViewById(R.id.text_players);
         teamsViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

@@ -1,0 +1,122 @@
+<LinearLayout
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    app:layout_constraintStart_toStartOf="parent"
+
+    app:layout_constraintTop_toBottomOf="@id/table_head"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/league_pos"
+        android:layout_width="@dimen/league_digits_width"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:maxWidth="@dimen/league_digits_width"
+        android:maxLines="1"
+        android:minWidth="@dimen/league_digits_width"
+        android:text="1" />
+
+    <ImageView
+        android:id="@+id/league_team_logo"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:src="@mipmap/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/league_team_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:maxLines="1"
+        android:text="Mbabane Highlanders" />
+
+    <TextView
+        android:id="@+id/league_games_played"
+        android:layout_width="@dimen/league_digits_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:maxWidth="@dimen/league_digits_width"
+        android:maxLines="1"
+        android:minWidth="@dimen/league_digits_width"
+
+        android:text="14" />
+
+    <TextView
+        android:id="@+id/league_games_won"
+        android:layout_width="@dimen/league_digits_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:maxWidth="@dimen/league_digits_width"
+        android:maxLines="1"
+        android:minWidth="@dimen/league_digits_width"
+
+        android:text="3" />
+
+    <TextView
+        android:id="@+id/league_games_draws"
+        android:layout_width="@dimen/league_digits_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:maxWidth="@dimen/league_digits_width"
+        android:maxLines="1"
+        android:minWidth="@dimen/league_digits_width"
+
+        android:text="9" />
+
+    <TextView
+        android:id="@+id/league_games_losses"
+        android:layout_width="@dimen/league_digits_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:maxWidth="@dimen/league_digits_width"
+        android:maxLines="1"
+        android:minWidth="@dimen/league_digits_width"
+
+        android:text="8" />
+
+    <TextView
+        android:id="@+id/league_gf"
+        android:layout_width="@dimen/league_digits_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:maxWidth="@dimen/league_digits_width"
+        android:maxLines="1"
+        android:minWidth="@dimen/league_digits_width"
+
+        android:text="9" />
+
+    <TextView
+        android:id="@+id/league_ga"
+        android:layout_width="@dimen/league_digits_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:maxWidth="@dimen/league_digits_width"
+        android:maxLines="1"
+        android:minWidth="@dimen/league_digits_width"
+
+        android:text="8" />
+
+    <TextView
+        android:id="@+id/league_points"
+        android:layout_width="@dimen/league_digits_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:maxWidth="@dimen/league_digits_width"
+        android:maxLines="1"
+        android:minWidth="@dimen/league_digits_width"
+
+        android:text="18" />
+
+</LinearLayout>
