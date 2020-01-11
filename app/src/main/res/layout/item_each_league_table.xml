@@ -1,122 +1,93 @@
-<LinearLayout
-
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="horizontal"
-    app:layout_constraintStart_toStartOf="parent"
-
-    app:layout_constraintTop_toBottomOf="@id/table_head"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="48dp"
+    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+    android:orientation="horizontal">
 
     <TextView
-        android:id="@+id/league_pos"
-        android:layout_width="@dimen/league_digits_width"
+        android:id="@+id/table_pos"
+        android:layout_width="46dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:maxWidth="@dimen/league_digits_width"
-        android:maxLines="1"
-        android:minWidth="@dimen/league_digits_width"
-        android:text="1" />
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="1"
+        />
 
     <ImageView
-        android:id="@+id/league_team_logo"
-        android:layout_width="19dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:src="@mipmap/ic_launcher_foreground" />
+        android:id="@+id/table_team_logo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/ic_launcher_foreground"></ImageView>
 
     <TextView
-        android:id="@+id/league_team_name"
+        android:id="@+id/table_team_name"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_weight="1"
-        android:maxLines="1"
-        android:text="Mbabane Highlanders" />
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="Mbabane Swallows"
+        />
 
     <TextView
-        android:id="@+id/league_games_played"
-        android:layout_width="@dimen/league_digits_width"
+        android:id="@+id/table_P"
+        android:layout_width="46dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_weight="1"
-        android:maxWidth="@dimen/league_digits_width"
-        android:maxLines="1"
-        android:minWidth="@dimen/league_digits_width"
-
-        android:text="14" />
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="3"
+        />
 
     <TextView
-        android:id="@+id/league_games_won"
-        android:layout_width="@dimen/league_digits_width"
+        android:id="@+id/table_D"
+        android:layout_width="46dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_weight="1"
-        android:maxWidth="@dimen/league_digits_width"
-        android:maxLines="1"
-        android:minWidth="@dimen/league_digits_width"
-
-        android:text="3" />
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="9"
+        />
 
     <TextView
-        android:id="@+id/league_games_draws"
-        android:layout_width="@dimen/league_digits_width"
+        android:id="@+id/table_L"
+        android:layout_width="46dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_weight="1"
-        android:maxWidth="@dimen/league_digits_width"
-        android:maxLines="1"
-        android:minWidth="@dimen/league_digits_width"
-
-        android:text="9" />
-
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="2"
+        />
     <TextView
-        android:id="@+id/league_games_losses"
-        android:layout_width="@dimen/league_digits_width"
+        android:id="@+id/table_GF"
+        android:layout_width="46dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_weight="1"
-        android:maxWidth="@dimen/league_digits_width"
-        android:maxLines="1"
-        android:minWidth="@dimen/league_digits_width"
-
-        android:text="8" />
-
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="9"
+        />
     <TextView
-        android:id="@+id/league_gf"
-        android:layout_width="@dimen/league_digits_width"
+        android:id="@+id/table_GA"
+        android:layout_width="46dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_weight="1"
-        android:maxWidth="@dimen/league_digits_width"
-        android:maxLines="1"
-        android:minWidth="@dimen/league_digits_width"
-
-        android:text="9" />
-
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="8"
+        />
     <TextView
-        android:id="@+id/league_ga"
-        android:layout_width="@dimen/league_digits_width"
+        android:id="@+id/table_GD"
+        android:layout_width="46dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_weight="1"
-        android:maxWidth="@dimen/league_digits_width"
-        android:maxLines="1"
-        android:minWidth="@dimen/league_digits_width"
-
-        android:text="8" />
-
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="1"
+        />
     <TextView
-        android:id="@+id/league_points"
-        android:layout_width="@dimen/league_digits_width"
+        android:id="@+id/table_PTS"
+        android:layout_width="46dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_weight="1"
-        android:maxWidth="@dimen/league_digits_width"
-        android:maxLines="1"
-        android:minWidth="@dimen/league_digits_width"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="18"
+        />
 
-        android:text="18" />
 
 </LinearLayout>

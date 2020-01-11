@@ -5,114 +5,15 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <LinearLayout
-        android:id="@+id/table_head"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tabrecycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        >
-
-        <TextView
-            android:layout_width="@dimen/league_digits_width"
-            android:layout_height="wrap_content"
-            android:minWidth="@dimen/league_digits_width"
-            android:maxWidth="@dimen/league_digits_width"
-            android:layout_weight="1"
-            android:maxLines="1"
-            android:text="#"
-            />
-
-
-
-        <TextView
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/activity_horizontal_margin"
-            android:layout_weight="1"
-            android:maxLines="1"
-            android:text="Team" />
-
-        <TextView
-            android:layout_width="@dimen/league_digits_width"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/activity_horizontal_margin"
-            android:layout_weight="1"
-            android:maxLines="1"
-            android:minWidth="@dimen/league_digits_width"
-            android:maxWidth="@dimen/league_digits_width"
-            android:layout_marginEnd="19dp"
-            android:text="P" />
-
-        <TextView
-            android:layout_width="@dimen/league_digits_width"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/activity_horizontal_margin"
-            android:layout_weight="1"
-            android:maxLines="1"
-            android:minWidth="@dimen/league_digits_width"
-            android:maxWidth="@dimen/league_digits_width"
-
-            android:text="W" />
-
-        <TextView
-            android:layout_width="@dimen/league_digits_width"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/activity_horizontal_margin"
-            android:layout_weight="1"
-            android:maxLines="1"
-            android:minWidth="@dimen/league_digits_width"
-            android:maxWidth="@dimen/league_digits_width"
-
-            android:text="D" />
-
-        <TextView
-            android:layout_width="@dimen/league_digits_width"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/activity_horizontal_margin"
-            android:layout_weight="1"
-            android:maxLines="1"
-            android:minWidth="@dimen/league_digits_width"
-            android:maxWidth="@dimen/league_digits_width"
-
-            android:text="L" />
-
-        <TextView
-            android:layout_width="@dimen/league_digits_width"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/activity_horizontal_margin"
-            android:layout_weight="1"
-            android:maxLines="1"
-            android:minWidth="@dimen/league_digits_width"
-            android:maxWidth="@dimen/league_digits_width"
-
-            android:text="GF" />
-
-        <TextView
-            android:layout_width="@dimen/league_digits_width"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/activity_horizontal_margin"
-            android:layout_weight="1"
-            android:maxLines="1"
-            android:minWidth="@dimen/league_digits_width"
-            android:maxWidth="@dimen/league_digits_width"
-
-            android:text="GA" />
-
-        <TextView
-            android:layout_width="@dimen/league_digits_width"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/activity_horizontal_margin"
-            android:layout_weight="1"
-            android:maxLines="1"
-            android:minWidth="@dimen/league_digits_width"
-            android:maxWidth="@dimen/league_digits_width"
-
-            android:text="Pts" />
-
-    </LinearLayout>
-
+        app:layout_constraintTop_toTopOf="parent"
+        tools:itemCount="19"
+        tools:listitem="@layout/item_each_league_table" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
