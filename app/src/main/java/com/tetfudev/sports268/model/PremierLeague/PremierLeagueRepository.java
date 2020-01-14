@@ -1,4 +1,4 @@
-package com.tetfudev.sports268.model;
+package com.tetfudev.sports268.model.PremierLeague;
 
 import android.app.Application;
 

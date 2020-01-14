@@ -2,6 +2,8 @@ package com.tetfudev.sports268.model;
 
 import android.util.Pair;
 
+import com.tetfudev.sports268.model.PremierLeague.Team;
+
 class Game {
     private int gameId;
     public boolean isPlayed;
