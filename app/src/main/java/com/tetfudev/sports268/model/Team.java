@@ -1,82 +1,31 @@
 package com.tetfudev.sports268.model;
 
+import com.google.gson.annotations.SerializedName;
+
+import java.util.ArrayList;
+
 public class Team {
 
+    @SerializedName("id")
     private int id;
+    @SerializedName("team_name")
     private String teamName;
+    @SerializedName("logo")
     private String teamLogoUrl;
+    @SerializedName("P")
+    private int P;
+    @SerializedName("W")
     private int W;
+    @SerializedName("D")
     private int D;
-    private int  L;
-    private int  GF;
-    private int  GA;
-    private int  GD;
-    private int  PTS;
-    private String season;
+    @SerializedName("L")
+    private int L;
+    @SerializedName("GF")
+    private int GF;
+    @SerializedName("GA")
+    private int GA;
+    private int GD;
+    private int PTS;
 
-    public Team(String teamName, String teamLogoUrl, String season, int w, int d, int l, int GF, int GA) {
-        this.teamName = teamName;
-        this.teamLogoUrl = teamLogoUrl;
-        W = w;
-        D = d;
-        L = l;
-        this.GF = GF;
-        this.GA = GA;
-        this.season = season;
 
-        calculatePTS();
-        calculateGD();
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    private void calculateGD() {
-        GD = GF - GA;
-    }
-
-    private void calculatePTS() {
-        PTS = 3 * W + 1 * D;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getTeamName() {
-        return teamName;
-    }
-
-    public String getTeamLogoUrl() {
-        return teamLogoUrl;
-    }
-
-    public int getW() {
-        return W;
-    }
-
-    public int getD() {
-        return D;
-    }
-
-    public int getL() {
-        return L;
-    }
-
-    public int getGF() {
-        return GF;
-    }
-
-    public int getGA() {
-        return GA;
-    }
-
-    public int getGD() {
-        return GD;
-    }
-
-    public int getPTS() {
-        return PTS;
-    }
 }
