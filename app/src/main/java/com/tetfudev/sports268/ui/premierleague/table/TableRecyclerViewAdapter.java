@@ -1,5 +1,6 @@
 package com.tetfudev.sports268.ui.premierleague.table;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,9 +10,23 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.google.android.material.button.MaterialButton;
 import com.tetfudev.sports268.R;
+import com.tetfudev.sports268.model.PremierLeague.Team;
+
+import java.util.List;
 
 public class TableRecyclerViewAdapter extends RecyclerView.Adapter<TableRecyclerViewAdapter.TableItemViewHolder> {
+
+    private static final String TAG = "TableAdapter";
+    private List<Team> mTeamList;
+    private Context context;
+
+    public TableRecyclerViewAdapter(List<Team> mTeamList, Context context) {
+        this.mTeamList = mTeamList;
+        this.context = context;
+    }
 
     @NonNull
     @Override
@@ -22,16 +37,33 @@ public class TableRecyclerViewAdapter extends RecyclerView.Adapter<TableRecycler
 
     @Override
     public void onBindViewHolder(@NonNull TableItemViewHolder holder, int position) {
-
+        //TODO put into account position in table for stying
+        if(mTeamList==null){
+            return;
+        }
+        Team currentTeam = mTeamList.get(position);
+        holder.table_pos.setText(Integer.toString(position+1));
+        holder.table_team_name.setText(currentTeam.getTeamName());
+        holder.table_P.setText(Integer.toString(currentTeam.getP()));
+        holder.table_D.setText(Integer.toString(currentTeam.getD()));
+        holder.table_L.setText(Integer.toString(currentTeam.getL()));
+        holder.table_GF.setText(Integer.toString(currentTeam.getGF()));
+        holder.table_GA.setText(Integer.toString(currentTeam.getGA()));
+        holder.table_GD.setText(Integer.toString(currentTeam.getGD()));
+        holder.table_PTS.setText(Integer.toString(currentTeam.getPTS()));
+        Glide.with(context)
+                .load(currentTeam.getTeamLogoUrl())
+                .into(holder.table_team_logo);
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return mTeamList.size();
     }
 
     public class TableItemViewHolder extends RecyclerView.ViewHolder {
-        TextView table_pos, table_team_name, table_P, table_D, table_L, table_GF, table_GA, table_GD, table_PTS;
+        MaterialButton table_pos;
+        TextView table_team_name, table_P, table_D, table_L, table_GF, table_GA, table_GD, table_PTS;
         ImageView table_team_logo;
 
         public TableItemViewHolder(@NonNull View tableRow) {

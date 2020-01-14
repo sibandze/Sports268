@@ -24,8 +24,87 @@ public class Team {
     private int GF;
     @SerializedName("GA")
     private int GA;
-    private int GD;
-    private int PTS;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getTeamName() {
+        return teamName;
+    }
+
+    public void setTeamName(String teamName) {
+        this.teamName = teamName;
+    }
+
+    public String getTeamLogoUrl() {
+        return teamLogoUrl;
+    }
+
+    public void setTeamLogoUrl(String teamLogoUrl) {
+        this.teamLogoUrl = teamLogoUrl;
+    }
+
+    public int getP() {
+        return P;
+    }
+
+    public void setP(int p) {
+        P = p;
+    }
+
+    public int getW() {
+        return W;
+    }
+
+    public void setW(int w) {
+        W = w;
+    }
+
+    public int getD() {
+        return D;
+    }
+
+    public void setD(int d) {
+        D = d;
+    }
+
+    public int getL() {
+        return L;
+    }
+
+    public void setL(int l) {
+        L = l;
+    }
+
+    public int getGF() {
+        return GF;
+    }
+
+    public void setGF(int GF) {
+        this.GF = GF;
+    }
+
+    public int getGA() {
+        return GA;
+    }
+
+    public void setGA(int GA) {
+        this.GA = GA;
+    }
+
+    public int getGD() {
+        return GF - GA;
+    }
+
+
+
+    public int getPTS() {
+        return 3 * W + 1 * D + 0 * L;
+    }
 
 }
